@@ -1,0 +1,36 @@
+@import "compass"
+@import "compass/reset"
+
+.explanation
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 70%
+  margin-left: 10%
+  p
+    color: green
+    max-width: 30%
+    &:first-child
+      color: blue
+      align-self: flex-start
+    &:last-child
+      color: yellow
+      background-color: gray
+      align-self: flex-end
+    
+
+
+.blog_posts
+  .blogpost
+    margin-top: 2em
+    margin-bottom: 2em
+    width: 80vw
+    margin-left: 2em
+    .blogpost__title
+      font-size: 20pt
+      color: red
+    .blogpost__author
+      font-size: 10pt
+      color: gray
+      margin-left: 0.5em
+

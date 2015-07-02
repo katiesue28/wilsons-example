@@ -1,0 +1,19 @@
+---
+title: Index
+---
+
+h1 This is my example blog.
+
+.explanation
+  p it uses blog posts written in data/project.yml (uses yaml format)
+
+  p it uses css written in "sass", in source/assets/stylesheets/project.sass
+
+  p it uses the templating engine called "slimmer" which is a nice way to combine ruby and html in your page, but you can just use raw html as well if you like
+
+.blog_posts
+  - data.project.blog_posts.each do |post|
+    section.blogpost
+      h3.blogpost__title = post.title
+      h5.blogpost__author = "by #{post.by}"
+      p.blogpost__content = post.content
